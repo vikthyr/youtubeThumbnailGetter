@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/a9c98c39db.js" crossorigin="anonymous"></script>
+    <script async custom-element="amp-ad" src="https://cdn.ampproject.org/v0/amp-ad-0.1.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link type="text/css" href="style.css" rel="stylesheet">
+    <title>Document</title>
+
+</head>
+<body>
+    
+    <nav class="header-nav">
+        
+        <a href="./">
+            <i class="fa-solid fa-images"></i>
+            YouTube Thumbnail Getter
+        </a>
+    </nav>
+
+     <section class="main-container">
+        <div class="w33 container-left"></div>
+
+        <div class="w33 container-center">
+            <form class="" method="get">
+                <input type="text" name="videoLink" placeholder="YouTube URL or ID..." required/>
+                <input class="submit-button" type="submit" name="getImage" value="Get Thumbnail"/>
+            </form>
+
+            <?php if($videoFound == false && $videoLink != ''){ ?>
+            <div class="not-found-container">
+                NOT FOUND
+            </div>
+            <?php } ?>
+
+            <div class="result-container">
+                <?php if($videoFound == true){ ?>
+                    <img src="https://img.youtube.com/vi/<?php echo $videoID?>/maxresdefault.jpg"/>
+                    <div class="download-container">
+                        <a class="download-button" href="./temp_thumbs/1280x720_thumbnail_<?php echo $videoID?>.jpg" download="1280x720_thumbnail_<?php echo $videoID?>.jpg">
+                            <scan>1280x720</scan>
+                            <i class="fa-solid fa-download"></i>
+                        </a>
+                        <a class="download-button" href="./temp_thumbs/640x480_thumbnail_<?php echo $videoID?>.jpg" download="640x480_thumbnail_<?php echo $videoID?>.jpg">
+                            <scan>640x480</scan>
+                            <i class="fa-solid fa-download"></i>
+                        </a>
+                        <a class="download-button" href="./temp_thumbs/480x360_thumbnail_<?php echo $videoID?>.jpg" download="480x360_thumbnail_<?php echo $videoID?>.jpg">
+                            <scan>480x360</scan>
+                            <i class="fa-solid fa-download"></i>
+                        </a>
+                        <a class="download-button" href="./temp_thumbs/320x180_thumbnail_<?php echo $videoID?>.jpg" download="320x180_thumbnail_<?php echo $videoID?>.jpg">
+                            <scan>320x180</scan>
+                            <i class="fa-solid fa-download"></i>
+                        </a>
+                        <a class="download-button" href="./temp_thumbs/120x90_thumbnail_<?php echo $videoID?>.jpg" download="120x90_thumbnail_<?php echo $videoID?>.jpg">
+                            <scan>120x90</scan>
+                            <i class="fa-solid fa-download"></i>
+                        </a>
+                    </div>
+        
+                <?php } ?>
+            </div>
+        </div>
+
+        <div class="w33 container-right"></div>
+    </section>
+
+</body>
+</html>
