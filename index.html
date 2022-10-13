@@ -5,16 +5,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/a9c98c39db.js" crossorigin="anonymous"></script>
-    <script async custom-element="amp-ad" src="https://cdn.ampproject.org/v0/amp-ad-0.1.js"></script>
+    <script src="./index.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;700&display=swap" rel="stylesheet">
     <link type="text/css" href="style.css" rel="stylesheet">
+
     <title>YouTube Thumbnail Getter</title>
 
 </head>
 <body>
-    
+
     <nav class="header-nav">
         
         <a href="./">
@@ -24,12 +25,21 @@
     </nav>
 
      <section class="main-container">
-        <div class="w33 container-left"></div>
+        <div class="w33 container-left">
+            
+        </div>
 
         <div class="w33 container-center">
             <form class="" method="get">
-                <input type="text" name="videoLink" placeholder="YouTube URL or ID..." required/>
-                <input class="submit-button" type="submit" name="getImage" value="Get Thumbnail"/>
+                <div class="form-input">
+                <input type="text" class="light-color" id="linkInput" name="videoLink" placeholder="YouTube URL or ID..." required/>
+                    <span>
+                        <a class="pasteClipboardButton" onclick="pasteClipboard()">
+                            <i class="fa-regular fa-clipboard light-color cursor-pointer"></i>
+                        </a>
+                    </span>
+                </div>
+                <input class="submit-button cursor-pointer" type="submit" name="getImage" value="GET THUMBNAIL"/>
             </form>
 
             <?php if($videoFound == false && $videoLink != ''){ ?>
@@ -44,31 +54,45 @@
                     <div class="download-container">
                         <a class="download-button" href="./temp_thumbs/1280x720_thumbnail_<?php echo $videoID?>.jpg" download="1280x720_thumbnail_<?php echo $videoID?>.jpg">
                             <scan>1280x720</scan>
-                            <i class="fa-solid fa-download"></i>
+                            <i class="fa-solid fa-download light-color"></i>
                         </a>
                         <a class="download-button" href="./temp_thumbs/640x480_thumbnail_<?php echo $videoID?>.jpg" download="640x480_thumbnail_<?php echo $videoID?>.jpg">
                             <scan>640x480</scan>
-                            <i class="fa-solid fa-download"></i>
+                            <i class="fa-solid fa-download light-color"></i>
                         </a>
                         <a class="download-button" href="./temp_thumbs/480x360_thumbnail_<?php echo $videoID?>.jpg" download="480x360_thumbnail_<?php echo $videoID?>.jpg">
                             <scan>480x360</scan>
-                            <i class="fa-solid fa-download"></i>
+                            <i class="fa-solid fa-download light-color"></i>
                         </a>
                         <a class="download-button" href="./temp_thumbs/320x180_thumbnail_<?php echo $videoID?>.jpg" download="320x180_thumbnail_<?php echo $videoID?>.jpg">
                             <scan>320x180</scan>
-                            <i class="fa-solid fa-download"></i>
+                            <i class="fa-solid fa-download light-color"></i>
                         </a>
                         <a class="download-button" href="./temp_thumbs/120x90_thumbnail_<?php echo $videoID?>.jpg" download="120x90_thumbnail_<?php echo $videoID?>.jpg">
                             <scan>120x90</scan>
-                            <i class="fa-solid fa-download"></i>
+                            <i class="fa-solid fa-download light-color"></i>
                         </a>
                     </div>
         
                 <?php } ?>
             </div>
+
+            
+
         </div>
 
         <div class="w33 container-right"></div>
+    </section>
+
+    <section class="info-container">
+        <div class="info-content">
+            
+            <h1>Lorem Ipsum</h1>
+            <br>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut porttitor, risus ac pellentesque maximus, odio est feugiat purus, id malesuada enim ipsum ut elit. Ut consequat, leo ac bibendum efficitur, purus urna aliquam elit, id dignissim diam justo nec magna. Aliquam dictum ultrices facilisis. Nunc felis odio, tincidunt at purus eget, dictum suscipit dolor. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Pellentesque ultricies accumsan nisl sit amet egestas. Fusce vitae leo a nisi mattis lacinia. Etiam in finibus massa, dapibus ultricies tortor. Nam molestie et metus ut pretium. Sed ac arcu sit amet mi posuere tincidunt. Mauris augue dui, consequat nec dictum id, tincidunt quis dui. Suspendisse eu tincidunt felis. Quisque ac maximus neque. Donec nec leo sit amet dolor facilisis dictum non nec tortor. Nulla tincidunt ipsum in ante lacinia, in consectetur turpis vehicula. Nam laoreet nisl quis sapien efficitur congue.</p>
+            <br>
+            <p>In cursus, nisi eu ultrices rhoncus, odio odio consequat nunc, et vehicula lorem nisi in erat. Sed laoreet, purus et tempus accumsan, nibh ex finibus lorem, ac rutrum tortor tellus ac enim. Cras tempor viverra metus ut tempus. Donec cursus, nibh eu placerat semper, enim velit cursus neque, sed suscipit velit turpis vel mi. Sed faucibus, arcu vitae gravida pretium, nibh lectus sollicitudin justo, fermentum sodales erat enim ut ex. Nam non erat ac erat dictum finibus tristique non nibh. Nunc non feugiat ante, eget convallis ante. Fusce maximus elit velit, at scelerisque dui fermentum quis. Morbi risus enim, gravida a libero vel, vestibulum convallis lacus. In hac habitasse platea dictumst. Aliquam ac elementum mauris. Praesent porttitor lacus sit amet velit tristique aliquam. Phasellus nec quam sed nibh viverra maximus.</p>
+        </div>
     </section>
 
 </body>

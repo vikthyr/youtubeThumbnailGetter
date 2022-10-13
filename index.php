@@ -82,11 +82,12 @@ if(isset($_GET['getImage'])){
     
     
 
-    foreach(glob($dir."*.jpg") as $file){
-        if(time() - filectime($file) > 86400){
-            unlink($file);
-        }
+foreach(glob($dir."*.jpg") as $file){
+    if(time() - filectime($file) > 86400){
+        unlink($file);
     }
+}
 
 include('index.html');
+
 ?>

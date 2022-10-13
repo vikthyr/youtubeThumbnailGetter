@@ -1,3 +1,11 @@
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+    transition: background-color 5000s ease-in-out 0s;
+    -webkit-text-fill-color: var(--lightColor) !important;
+}
+
 ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
     color: var(--lightColor);
     opacity: 0.8; /* Firefox */
@@ -27,6 +35,14 @@
     font-family: 'Rubik', sans-serif;
 }
 
+.light-color{
+    color: var(--lightColor);
+}
+
+.cursor-pointer{
+    cursor: pointer;
+}
+
 .header-nav{
     display: flex;
     margin-bottom: 2vw;
@@ -52,14 +68,26 @@ form{
     width: 100%;
 }
 
-form > input{
-    margin: 5px auto;
+.form-input{
     width: 80%;
     border: var(--borderSize) solid var(--lightColor);
     border-radius: var(--borderRadiusSize);
-    text-align: center;
     font-size: 1.5vw;
-    color: var(--lightColor);
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 0.5vw;
+}
+
+.form-input input{
+    width: 95%;
+    height: 2vw;
+    padding-left: 0;
+    margin-left: 0;
+    outline: none;
+    text-align: center;
+    background-color: transparent;
+    border: 0 transparent;
 }
 
 .submit-button{
@@ -67,10 +95,10 @@ form > input{
     height: 3vw;
     font-weight: 500;
     font-size: 1.5vw;
-    text-transform: uppercase;
     color: black;
     background-color: var(--lightColor);
-    cursor: pointer;
+    border: none;
+    border-radius: var(--borderRadiusSize);
     transition: var(--transitionTime);
 }
 
@@ -106,7 +134,7 @@ form > input{
 .result-container img{
     width: 50%;
     border-radius: var(--borderRadiusSize);
-    margin-top: 5px;
+    margin-top: 1vw;
     margin-bottom: 5px;
     transition: var(--transitionTime);
 }
@@ -135,14 +163,30 @@ form > input{
     font-size: 2vw;
 }
 
-.download-button scan{
-    color: var(--lightColor);
-}
-
-.download-button i{
-    color: var(--lightColor);
-}
-
 .not-found-container{
+    width: 20%;
+    margin-top: 2vw;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: var(--borderRadiusSize);
+    border: var(--borderSize) solid rgb(187, 5, 5);
     color: rgb(187, 5, 5);
+}
+
+.info-container{
+    margin-top: 2vw;
+    border-top: 0.1vw solid var(--lightColor);
+    text-align: left;
+}
+
+.info-content{
+    margin-top: 5vw;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.info-content h1, p{
+    color: rgb(230, 230, 230);
+
 }
