@@ -24,6 +24,7 @@ input:-webkit-autofill:active {
     --lightColor: #c5a87e;
     --darkColor: #161920;
     --darkerColor: #0d0f13;
+    --whiteColor: #d3d3d3; 
     --borderRadiusSize: 0.5vw;
     --borderSize: 0.2vw;
 }
@@ -31,7 +32,7 @@ input:-webkit-autofill:active {
 *{
     margin: 0;
     padding: 0;
-    color: #d3d3d3;
+    color: var(--whiteColor);
     font-family: 'Rubik', sans-serif;
 }
 
@@ -148,6 +149,13 @@ form{
 .container-center {
     width: 50%;
 }
+
+.container-center h1{
+    font-size: 2vw;
+}
+.container-center h1 > i{
+    font-size: 1.5vw;
+}
   
 .result-container{
     width: 100%;
@@ -208,10 +216,6 @@ form{
     margin-left: auto;
     margin-right: auto;
     font-size: 1.3vw;
-}
-
-.info-content ol{
-    padding-left: 1.5vw;
 }
 
 footer{
