@@ -88,6 +88,9 @@ foreach(glob($dir."*.jpg") as $file){
     }
 }
 
-include('index.html');
+include('./views/header.html');
+include('./views/index.html');
+include('./views/info.html');
+include('./views/footer.html')
 
 ?>
