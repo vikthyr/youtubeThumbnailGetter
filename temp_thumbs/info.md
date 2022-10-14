@@ -1,0 +1,1 @@
+This folder will be used to temporarily store the images downloaded by the system.

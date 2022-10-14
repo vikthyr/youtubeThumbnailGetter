@@ -47,6 +47,10 @@ body{
     cursor: pointer;
 }
 
+.center-text{
+    text-align: center;
+}
+
 .header-nav{
     display: flex;
     font-size: 1.5vw;
@@ -92,7 +96,7 @@ form{
     width: 90%;
     vertical-align: middle;
     outline: none;
-    font-size: 2vw;
+    font-size: 1.5vw;
     text-align: center;
     background-color: transparent;
     border: 0 transparent;
@@ -205,14 +209,46 @@ form{
     font-size: 1.3vw;
 }
 
+.info-content ol{
+    padding-left: 1.5vw;
+}
+
 footer{
     border-top: 0.1vw solid var(--lightColor);
     font-size: 1vw;
-    text-align: center;
     background-color: var(--darkerColor);
 }
 
-footer p{
-    margin: 1vw;
+.footer-main-container{
+    display: table;
+    width: 100%;
+    vertical-align: middle;
+}
+
+.footer-container-left{
+    display: table-cell;
+    width: 50%;
+    text-align: left;
+    vertical-align: middle;
+}
+
+.footer-container-right{
+    display: table-cell;
+    width: 50%;
+    text-align: right;
+    vertical-align: middle;
+}
+
+.footer-container-left span{
+    padding: 1vw;
     background-color: transparent;
+    vertical-align: middle;
+}
+
+.footer-container-right i{
+    padding: 0.5vw;
+    padding-right: 1vw;
+    font-size: 1.5vw;
+    background-color: transparent;
+    vertical-align: middle;
 }
