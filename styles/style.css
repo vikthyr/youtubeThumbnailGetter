@@ -209,6 +209,12 @@ form{
     text-align: left;
 }
 
+.info-container h2{
+    text-align: center;
+    padding-top: 2vw;
+    padding-bottom: 2vw;
+}
+
 .info-content{
     padding-top: 2vw;
     padding-bottom: 2vw;
@@ -216,6 +222,32 @@ form{
     margin-left: auto;
     margin-right: auto;
     font-size: 1.3vw;
+}
+
+.image-tutorial{
+    display: table;
+    width: 80%;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    border-bottom: 0.1vw solid var(--lightColor);
+}
+
+.image-tutorial i{
+    font-size: 4vw;
+    margin-bottom: 1vw;
+}
+
+.image-tutorial p{
+    font-size: 1.2vw;
+    margin-top: 0.5vw;
+}
+
+.enter-youtube-url , .click-on-button, .download-the-thumb{
+    display: table-cell;
+    width: 33.33%;
+    text-align: center;
+    padding: 1vw;
 }
 
 footer{

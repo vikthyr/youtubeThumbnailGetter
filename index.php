@@ -1,5 +1,7 @@
 <?php
 error_reporting(E_ERROR | E_PARSE);
+$SYSTEM_NAME = 'YouTube Thumbnail Taker';
+$DEVELOPER = 'VIKTHYR';
 $videoLink = '';
 $dir = "./temp_thumbs/";
 

@@ -10,15 +10,15 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;700&display=swap" rel="stylesheet">
     <link type="text/css" href="./styles/style.css" rel="stylesheet">
-    <title>YouTube Thumbnail Getter</title>
+    <title><?php echo $SYSTEM_NAME ?></title>
 </head>
 <body>
 
     <nav class="header-nav">
         
         <a href="./">
-            <i class="fa-solid fa-images"></i>
-            YouTube Thumbnail Getter
+            <i class="fa-solid fa-hat-wizard"></i>
+            <?php echo $SYSTEM_NAME ?>
         </a>
        
     </nav>
@@ -36,7 +36,7 @@
                             <i class="fa-regular fa-clipboard light-color cursor-pointer"></i>
                         </a>
                 </div>
-                <input class="submit-button cursor-pointer" type="submit" name="getImage" value="GET THUMBNAIL"/>
+                <input class="submit-button cursor-pointer" type="submit" name="getImage" value="TAKE THE THUMBNAIL"/>
             </form>
 
             <?php if($videoFound == false && $videoLink != ''){ ?>
