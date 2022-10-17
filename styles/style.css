@@ -67,10 +67,9 @@ body{
     background-color: transparent;
 }
 
-.header-nav i{
-    color: var(--lightColor);
-    font-size: 2vw;
-    margin-right: 5px;
+#header-icon{
+    width: 3vw;
+    vertical-align: middle;
 }
 
 section{
@@ -273,6 +272,8 @@ footer{
     width: 50%;
     text-align: left;
     vertical-align: middle;
+    font-size: 1.2vw;
+
 }
 
 .footer-container-right{
