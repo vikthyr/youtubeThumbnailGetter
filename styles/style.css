@@ -138,9 +138,12 @@ form{
     padding-bottom: 2vw;
 }
 
+.container-left, .contaiter-right{
+    padding: 0;
+}
+
 .w33{
     width: 10%;
-    padding: 20px;
     display: table-cell;
     text-align: center;
     vertical-align: middle;
@@ -148,6 +151,8 @@ form{
 
 .container-center {
     width: 50%;
+    padding: 1vw;
+
 }
 
 .container-center h1{
