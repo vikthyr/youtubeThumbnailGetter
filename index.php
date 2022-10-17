@@ -1,7 +1,6 @@
 <?php
 error_reporting(E_ERROR | E_PARSE);
-//$SYSTEM_NAME = 'YouTube Thumbnail Taker';
-//$DEVELOPER = 'VIKTHYR';
+session_start();
 $_SESSION['SYSTEM_NAME'] = 'YouTube Thumbnail Taker';
 $_SESSION['DEVELOPER'] = 'VIKTHYR';
 $videoLink = '';
