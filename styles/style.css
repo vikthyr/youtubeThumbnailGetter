@@ -211,6 +211,7 @@ form{
 
 .info-container h2{
     text-align: center;
+    font-size: 3.5vw;
     padding-top: 2vw;
     padding-bottom: 2vw;
 }
@@ -241,6 +242,10 @@ form{
 .image-tutorial p{
     font-size: 1.2vw;
     margin-top: 0.5vw;
+}
+
+.image-tutorial h3{
+    font-size: 2vw;
 }
 
 .enter-youtube-url , .click-on-button, .download-the-thumb{
