@@ -38,6 +38,7 @@ input:-webkit-autofill:active {
 
 body{
     background-color: var(--darkerColor);
+    min-width: 200px;
 }
 
 .light-color{
@@ -133,7 +134,7 @@ form{
 .main-container{
     display: table;
     width: 100%;
-    height: 50%;
+    height: 30vw;
     padding-top: 2vw;
     padding-bottom: 2vw;
 }
