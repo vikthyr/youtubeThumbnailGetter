@@ -1,7 +1,9 @@
 <?php
 error_reporting(E_ERROR | E_PARSE);
-$SYSTEM_NAME = 'YouTube Thumbnail Taker';
-$DEVELOPER = 'VIKTHYR';
+//$SYSTEM_NAME = 'YouTube Thumbnail Taker';
+//$DEVELOPER = 'VIKTHYR';
+$_SESSION['SYSTEM_NAME'] = 'YouTube Thumbnail Taker';
+$_SESSION['DEVELOPER'] = 'VIKTHYR';
 $videoLink = '';
 $dir = "./temp_thumbs/";
 
@@ -89,6 +91,7 @@ foreach(glob($dir."*.jpg") as $file){
     }
 }
 
+include('./views/header.html');
 include('./views/index.html');
 include('./views/info.html');
 include('./views/footer.html')

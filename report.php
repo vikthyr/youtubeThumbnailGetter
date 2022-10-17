@@ -1,5 +1,5 @@
 <?php
-
+session_start();
 $reportSent = false;
 
 if(isset($_POST["sendReport"])) {
@@ -15,7 +15,7 @@ if(isset($_POST["sendReport"])) {
     $reportSent = true;
 }
 
-
+include('./views/header.html');
 include('./views/report.html');
 include('./views/footer.html');
 ?>
