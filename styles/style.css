@@ -144,6 +144,7 @@ form{
 
 .w33{
     width: 10%;
+    max-width: 33%;
     display: table-cell;
     text-align: center;
     vertical-align: middle;
