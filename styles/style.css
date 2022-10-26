@@ -325,3 +325,7 @@ footer{
     border: var(--borderSize) solid rgb(0, 201, 0);
     color: rgb(0, 201, 0);
 }
+
+#report-form input, textarea{
+    color: var(--lightColor);
+}
