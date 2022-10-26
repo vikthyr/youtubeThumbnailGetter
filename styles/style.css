@@ -313,6 +313,7 @@ footer{
     text-align: center;
     background-color: transparent;
     margin: 1vw;
+    color: var(--lightColor);
 }
 
 .report-sent-container{
@@ -324,8 +325,4 @@ footer{
     border-radius: var(--borderRadiusSize);
     border: var(--borderSize) solid rgb(0, 201, 0);
     color: rgb(0, 201, 0);
-}
-
-#report-form input, textarea{
-    color: var(--lightColor);
 }
