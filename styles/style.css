@@ -118,7 +118,7 @@ form{
     width: 70%;
     min-width: 140px;
     height: 30px;
-    margin-top: 10px;
+    margin-top: 30px;
     font-weight: 500;
     font-size: 15px;
     color: black;
@@ -269,7 +269,7 @@ form{
 
 footer{
     border-top: 0.1vw solid var(--lightColor);
-    font-size: 10px;
+    font-size: 15px;
     background-color: var(--darkerColor);
 }
 
@@ -281,14 +281,14 @@ footer{
 
 .footer-container-left{
     display: table-cell;
-    width: 50%;
+    width: 80%;
     text-align: left;
     vertical-align: middle;
 }
 
 .footer-container-right{
     display: table-cell;
-    width: 50%;
+    width: 20%;
     text-align: right;
     vertical-align: middle;
 }
